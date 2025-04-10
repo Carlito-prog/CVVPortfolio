@@ -1,0 +1,424 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: cadetblue;
+}
+
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  position: fixed;
+}
+
+.navBar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  flex: .5;
+  padding: 1rem
+}
+
+.hide{
+  top: -100px;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight: 700;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+a 
+img{
+  padding: 5px 5px;
+  max-height: 40px;
+  max-width: 80px ;
+}
+
+
+a:hover{
+  color: salmon
+}
+
+.navBar
+.active{
+  color: salmon;
+}
+
+section {
+  height: 40rem;
+  width: 100%;
+}
+
+#home{
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-content{
+  display: flex;
+  height: 100%;
+}
+
+.home-content,
+.home-title{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: whitesmoke;
+}
+
+.home-content
+.info{
+  flex: .7;
+  padding: 1rem;
+}
+
+.home-content
+.info
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  line-height: 1.5rem;
+  font-weight: 900;
+}
+
+.home-content
+.image{
+  flex: .3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content
+.typewriter{
+  overflow: hidden;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  /* animation: typing 14.0s steps(40, end); */
+  max-height: 40vh;
+}
+
+/* @keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+} */
+
+/* @keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: salmon; }
+} */
+#skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills
+h1{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: salmon;
+}
+
+.skillsType-container{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border: 2px solid salmon;
+  cursor: pointer;
+}
+
+.skillsType-container
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-right: 2px solid salmon;
+}
+
+.skillsType-container
+div:last-child{
+  border-right: none
+}
+
+.skillsType-container
+h3{
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight: 800;
+}
+
+.skillsType-container
+.active{
+  background-color: salmon;
+}
+
+.skills-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 20px;
+  height: 100%;
+}
+
+.skill-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: fit-content;
+}
+
+.skill-item
+h3{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.skill-item
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects
+h1{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: salmon;
+  margin: 0px 20px 50px 0px;
+}
+
+#projects
+h3{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+#projects
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  color: whitesmoke;
+  text-align: center;
+  width: 80%;
+  line-height: 1.5rem;
+}
+
+#projects
+a{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: salmon;
+}
+.projectItem-container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+  scrollbar-width: 5px;
+}
+
+.projectItem-container
+.project-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 40rem;
+  height: 80%;
+  margin: 15px 15px;
+  border: 2px solid salmon;
+}
+
+#footer {
+  background-image: url('./assets/background.jpg');
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#footer
+.footerSocials-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 30rem;
+}
+
+#footer
+.socialsLink-container
+div:hover{
+  cursor: pointer;
+  background-color: salmon;
+}
+
+#footer
+.footerSocials-container
+h3{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: salmon;
+}
+
+#footer
+.socialsLink-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px
+}
+
+#footer
+.footerForm-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  min-height: 30rem;
+}
+
+#footer
+.footerForm-container
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+
+#footer
+.footerForm-container
+input{
+  border-radius: 5px;
+  width: 50%;
+}
+
+#footer
+.footerForm-container
+div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footer
+input{
+  width: 50%;
+  height: 1.8rem;
+}
+
+#footer
+textarea{
+  width: 50%;
+  height: 4.5rem;
+}
+
+#footer
+button{
+  width: 100px;
+  height: 30px;
+  margin: 20px 0px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  background-color: salmon;
+}
+
+@media (max-width: 768px) {
+  .navBar-links{
+    flex: 1
+  }
+  #home
+  .info{
+    flex: 1;
+  }
+  #home
+  h1{
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+  #home
+  h3{
+    margin: 0px;
+  }
+  #home
+  p{
+    overflow-y: scroll;
+  }
+  #home
+  .image{
+    display: none;
+  }
+  #skills
+  .skills-content{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+  }
+  #projects
+  .projectItem-container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  #projects
+  .projectItem-container
+  .project-item{
+   min-width: 80% !important;
+  }
+}
