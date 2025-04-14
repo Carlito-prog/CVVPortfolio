@@ -8,6 +8,7 @@ function NavBar() {
 
     useEffect(() => {
         const handleScroll = () => {
+            // current scroll position on the Y axis
             const currentScrollPos = window.scrollY;
 
             // Determine scroll direction

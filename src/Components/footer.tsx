@@ -54,6 +54,7 @@ function Footer() {
                         { resetForm }) => {
                         await sendEmail(values).then(() => {
                             localStorage.setItem('sentContact', "true");
+                            alert("Thank you for contacting me!")
                             resetForm({
                                 values: {
                                     fullName: "",
